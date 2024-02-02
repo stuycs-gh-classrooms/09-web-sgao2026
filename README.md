@@ -1,3 +1,3 @@
 # fcs-html-template
-### Name:
-### Period:
+### Name: Sandra Gao
+### Period: 9
