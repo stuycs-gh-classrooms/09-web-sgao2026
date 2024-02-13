@@ -4,7 +4,8 @@ body {
 }
 
 h1,
-p {
+p,
+li {
   font-family: serif;
   color: midnightblue;
 }
@@ -12,7 +13,7 @@ p {
 h1 {
   font-size: 20;
   font-weight: bold;
-  text-align: centre;
+  text-align: center;
   border: dotted;
 }
 
