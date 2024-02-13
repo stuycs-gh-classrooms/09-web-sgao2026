@@ -1,1 +1,21 @@
+body {
+  background-color: pink;
+  width: 50%;
+}
 
+h1,
+p {
+  font-family: serif;
+  color: midnightblue;
+}
+
+h1 {
+  font-size: 20;
+  font-weight: bold;
+  text-align: centre;
+  border: dotted;
+}
+
+p {
+  font-size: 16;
+}
