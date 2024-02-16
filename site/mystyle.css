@@ -1,0 +1,32 @@
+html {
+	padding: 20px;
+}
+
+nav {
+	display: inline;
+}
+
+.menu {
+	display: inherit;
+	margin: 10px;
+}
+.menu_item {
+	display: inherit;
+	background-color: midnightblue;
+	color: white;
+	margin: inherit;
+}
+
+.current_page {
+	display: inherit;
+	border: 2px;
+	border-color: black;
+	margin: inherit;
+}
+
+a {
+	color: inherit;
+	border: 2px;
+	border-color: black;
+	padding: 3px;
+}
