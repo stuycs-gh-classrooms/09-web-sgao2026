@@ -2,31 +2,44 @@ html {
 	padding: 20px;
 }
 
-nav {
-	display: inline;
+.menu_box {
+	margin: 10px;
+	padding: 10px;
+	background-color: pink;
 }
-
 .menu {
-	display: inherit;
+	padding: 0px;
 	margin: 10px;
 }
-.menu_item {
-	display: inherit;
-	background-color: midnightblue;
-	color: white;
+.menu_item,
+.current_page {
+	display: inline;
+	padding: 5px;
 	margin: inherit;
+}
+
+.menu_item {
+	background-color: midnightblue;
+	margin: inherit;
+}
+.menu_item:hover {
+	background-color: blue;
 }
 
 .current_page {
-	display: inherit;
-	border: 2px;
+	border: 3px;
+	border-style: solid;
 	border-color: black;
-	margin: inherit;
 }
 
-a {
+
+.menu_link {
+	color: white;
+}
+.resource {
 	color: inherit;
 	border: 2px;
+	border-style: solid;
 	border-color: black;
 	padding: 3px;
 }
