@@ -1,0 +1,69 @@
+html {
+	padding: 20px;
+}
+body {
+	background-color: pink;
+}
+a {
+	color: black;
+}
+
+.menu_box {
+	margin: 10px;
+	padding: 10px;
+	background-color: palevioletred;
+}
+.menu {
+	padding: 0px;
+	margin: 10px;
+}
+.menu_item,
+.current_page {
+	display: inline;
+	padding: 5px;
+	margin: inherit;
+}
+
+.menu_item {
+	background-color: midnightblue;
+	margin: inherit;
+}
+.menu_item:hover {
+	background-color: steelblue;
+}
+
+.current_page {
+	border: 3px;
+	border-style: solid;
+	border-color: black;
+}
+.current_page:hover {
+	background-color: pink;
+}
+
+.menu_link {
+	color: white;
+}
+.resource {
+	color: inherit;
+	background-color: palevioletred;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+.section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	background-color: rgb(255,176,176, 75%);
+	border-radius: 10px;
+}
