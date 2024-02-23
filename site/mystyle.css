@@ -1,11 +1,17 @@
 html {
 	padding: 20px;
 }
+body {
+	background-color: pink;
+}
+a {
+	color: black;
+}
 
 .menu_box {
 	margin: 10px;
 	padding: 10px;
-	background-color: pink;
+	background-color: palevioletred;
 }
 .menu {
 	padding: 0px;
@@ -23,7 +29,7 @@ html {
 	margin: inherit;
 }
 .menu_item:hover {
-	background-color: blue;
+	background-color: steelblue;
 }
 
 .current_page {
@@ -31,15 +37,33 @@ html {
 	border-style: solid;
 	border-color: black;
 }
-
+.current_page:hover {
+	background-color: pink;
+}
 
 .menu_link {
 	color: white;
 }
 .resource {
 	color: inherit;
-	border: 2px;
-	border-style: solid;
-	border-color: black;
-	padding: 3px;
+	background-color: palevioletred;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+.section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	background-color: rgb(255,176,176, 75%);
+	border-radius: 10px;
 }
