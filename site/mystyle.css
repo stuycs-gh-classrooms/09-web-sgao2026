@@ -8,6 +8,11 @@ a {
 	color: black;
 }
 
+
+
+
+
+
 .menu_box {
 	margin: 10px;
 	padding: 10px;
@@ -67,10 +72,29 @@ a {
 .section {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding: 15px;
+	padding: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 	
 	background-color: rgb(65,186,122,70%);
 	border-radius: 10px;
+}
+
+
+
+
+
+
+
+.home_resource {
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#resource_bar {
+	padding: 0px;
+	text-align: center;
 }
