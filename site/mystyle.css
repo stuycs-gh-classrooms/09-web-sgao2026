@@ -2,7 +2,7 @@ html {
 	padding: 20px;
 }
 body {
-	background-color: pink;
+	background-color: rgb(179,232,182);
 }
 a {
 	color: black;
@@ -11,7 +11,8 @@ a {
 .menu_box {
 	margin: 10px;
 	padding: 10px;
-	background-color: palevioletred;
+	background-color: rgb(55,166,118);
+	border-radius: 10px;
 }
 .menu {
 	padding: 0px;
@@ -21,24 +22,27 @@ a {
 .current_page {
 	display: inline;
 	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin: inherit;
+	border-radius: 10px;
 }
 
 .menu_item {
-	background-color: midnightblue;
+	background-color: rgb(42,77,64);
 	margin: inherit;
 }
 .menu_item:hover {
-	background-color: steelblue;
+	background-color: rgb(42,77,64, 70%);
 }
 
 .current_page {
-	border: 3px;
+	border: 2px;
 	border-style: solid;
 	border-color: black;
 }
 .current_page:hover {
-	background-color: pink;
+	background-color: rgb(179,232,182,40%);
 }
 
 .menu_link {
@@ -46,8 +50,11 @@ a {
 }
 .resource {
 	color: inherit;
-	background-color: palevioletred;
+	background-color: rgb(55,166,118);
 	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
 }
 
 
@@ -64,6 +71,6 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 	
-	background-color: rgb(255,176,176, 75%);
+	background-color: rgb(65,186,122,70%);
 	border-radius: 10px;
 }
