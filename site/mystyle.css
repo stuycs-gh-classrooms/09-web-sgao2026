@@ -93,8 +93,12 @@ a {
 	padding: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
+
+	background-color: rgb(42,77,64);
+	border-radius: 10px;
 }
 #resource_bar {
-	padding: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
