@@ -41,7 +41,7 @@ a {
 }
 .menu_item:hover {
 	border-color: white;
-	background-color: rgb(179,232,182,40%);
+	background-color: rgb(225,225,225,40%);
 }
 
 .current_page {
