@@ -20,42 +20,38 @@ li {
 
 
 .menu_box {
-	margin: 10px;
+	/* margin: 10px;
 	padding: 10px;
-	background-color: rgb(50, 22, 31);
-	border-radius: 10px;
+	border-radius: 10px; */
+	text-align: left;
 }
-.menu {
+/* .menu {
 	padding: 0px;
 	margin: 10px;
-}
+} */
 .menu_item {
 	display: inline;
-
-	background-color: inherit;
 
 	padding: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: inherit;
 	
-	border-radius: 10px;
-	border: 1px;
+	border: 2px;
 	border-style: solid;
-	border-color: rgb(50, 22, 31);
+	border-color: rgb(200, 70, 48);
 	
 	color: rgb(200, 70, 48);
 	font-weight: bold;
 }
 .menu_item:hover {
-	border-color: white;
-	background-color: rgb(225,225,225,50%);
+	border-color: black;
+	/* background-color: rgb(225,225,225,50%); */
 
 	color: black;
 }
 
 .current_page {
-	background-color: rgb(225,225,225,50%);
 	color: black;
 }
 
