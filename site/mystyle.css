@@ -34,7 +34,7 @@ a {
 	margin: inherit;
 	
 	border-radius: 10px;
-	border: 2px;
+	border: 1px;
 	border-style: solid;
 	border-color: rgb(50, 22, 31);
 	
@@ -50,6 +50,7 @@ a {
 
 .current_page {
 	color: white;
+	border: 2px;
 	border-color: white;
 }
 
