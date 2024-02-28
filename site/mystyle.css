@@ -43,13 +43,13 @@ a {
 }
 .menu_item:hover {
 	border-color: white;
-	background-color: rgb(225,225,225,50%);
+	background-color: rgb(225,225,225,40%);
 
 	color: black;
 }
 
 .current_page {
-	background-color: rgb(225,225,225,40%);
+	background-color: rgb(225,225,225,50%);
 	color: black;
 }
 
