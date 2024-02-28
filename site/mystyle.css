@@ -35,13 +35,15 @@ a {
 	border-radius: 10px;
 	border: 2px;
 	border-style: solid;
-	border-color: background-color;
+	border-color: rgb(50, 22, 31);
 	
 	color: rgb(200, 70, 48);
 }
 .menu_item:hover {
 	border-color: white;
 	background-color: rgb(225,225,225,40%);
+
+	color: black;
 }
 
 .current_page {
