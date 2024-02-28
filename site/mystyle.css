@@ -43,10 +43,8 @@ li {
 	font-size: 20px;
 }
 .menu_item:hover {
-	border-color: black;
+	border-color: rgb(200, 70, 48);
 	/* background-color: rgb(225,225,225,50%); */
-
-	color: black;
 }
 
 .current_page {
