@@ -5,13 +5,7 @@ body {
 	background-color: rgb(212, 210, 213);
 }
 a {
-	color: black;
-}
-.white_text {
-	color: white;
-}
-.black_text {
-	color: black;
+	color: inherit;
 }
 
 
@@ -21,7 +15,7 @@ a {
 .menu_box {
 	margin: 10px;
 	padding: 10px;
-	background-color: rgb(2, 60, 64);
+	background-color: rgb(50, 22, 31);
 	border-radius: 10px;
 }
 .menu {
@@ -42,6 +36,8 @@ a {
 	border-color: rgb(42,77,64);
 	
 	background-color: rgb(42,77,64);
+
+	color: rgb(50, 22, 31);
 }
 .menu_item:hover {
 	border-color: white;
@@ -49,6 +45,7 @@ a {
 }
 
 .current_page {
+	color: white;
 	border-color: white;
 	background-color: inherit;
 }
