@@ -50,8 +50,7 @@ a {
 }
 .current_page:hover {
 	background-color: rgb(179,232,182,40%);
-	border-color: black;
-	color: black;
+	text-color: black;
 }
 
 .resource {
