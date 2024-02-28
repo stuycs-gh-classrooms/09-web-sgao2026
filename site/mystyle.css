@@ -46,10 +46,12 @@ a {
 .current_page {
 	border: 2px;
 	border-style: solid;
-	border-color: black;
+	border-color: white;
 }
 .current_page:hover {
 	background-color: rgb(179,232,182,40%);
+	border-color: black;
+	color: black;
 }
 
 .resource {
