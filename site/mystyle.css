@@ -1,9 +1,6 @@
 html {
 	padding: 20px;
 }
-body {
-	background-color: rgb(212, 210, 213);
-}
 a {
 	color: inherit;
 	text-decoration-line: none;
@@ -52,8 +49,6 @@ li {
 }
 
 .current_page {
-	border: inherit;
-	border-style: inherit;
 	border-color: black;
 	color: black;
 }
