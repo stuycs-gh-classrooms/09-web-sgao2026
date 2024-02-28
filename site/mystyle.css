@@ -10,6 +10,9 @@ a {
 .white_text {
 	color: white;
 }
+.black_text {
+	color: black;
+}
 
 
 
@@ -50,7 +53,6 @@ a {
 }
 .current_page:hover {
 	background-color: rgb(179,232,182,40%);
-	text-color: black;
 }
 
 .resource {
