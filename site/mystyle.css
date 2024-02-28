@@ -30,23 +30,24 @@ a {
 }
 .menu_item {
 	display: inline;
+	
 	padding: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: inherit;
+	
 	border-radius: 10px;
+	border: 2px;
+	border-style: solid;
+	
 	background-color: rgb(42,77,64);
 }
 .menu_item:hover {
-	border: 2px;
-	border-style: solid;
 	border-color: white;
 	background-color: rgb(179,232,182,40%);
 }
 
 .current_page {
-	border: 2px;
-	border-style: solid;
 	border-color: white;
 	background-color: inherit;
 }
