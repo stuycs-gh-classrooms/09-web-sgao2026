@@ -49,9 +49,8 @@ a {
 }
 
 .current_page {
-	color: white;
-	border: 2px;
-	border-color: white;
+	background-color: rgb(225,225,225,40%);
+	color: black;
 }
 
 .resource {
