@@ -28,19 +28,14 @@ a {
 	padding: 0px;
 	margin: 10px;
 }
-.menu_item,
-.current_page {
+.menu_item {
 	display: inline;
 	padding: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: inherit;
 	border-radius: 10px;
-}
-
-.menu_item {
 	background-color: rgb(42,77,64);
-	margin: inherit;
 }
 .menu_item:hover {
 	background-color: rgb(42,77,64, 70%);
