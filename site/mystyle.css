@@ -6,6 +6,7 @@ body {
 }
 a {
 	color: inherit;
+	text-decoration-line: none;
 }
 
 
@@ -38,6 +39,7 @@ a {
 	border-color: rgb(50, 22, 31);
 	
 	color: rgb(200, 70, 48);
+	font-weight: bold;
 }
 .menu_item:hover {
 	border-color: white;
