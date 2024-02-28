@@ -45,6 +45,7 @@ a {
 	border: 2px;
 	border-style: solid;
 	border-color: white;
+	background-color: inherit;
 }
 .current_page:hover {
 	background-color: rgb(179,232,182,40%);
