@@ -24,13 +24,13 @@ li {
 	padding: 10px;
 	border-radius: 10px; 
 } */
-.menu {
-	/*padding: 0px;
-	margin: 10px; */
-	text-align: left;	
-} 
+/*.menu {
+	padding: 0px;
+	margin: 10px; 
+} */
 .menu_item {
 	display: inline;
+	text-align: left;
 
 	padding: 5px;
 	padding-left: 15px;
