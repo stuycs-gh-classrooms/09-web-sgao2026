@@ -24,7 +24,9 @@ a {
 }
 .menu_item {
 	display: inline;
-	
+
+	background-color: inherit;
+
 	padding: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -33,11 +35,9 @@ a {
 	border-radius: 10px;
 	border: 2px;
 	border-style: solid;
-	border-color: rgb(42,77,64);
+	border-color: background-color;
 	
-	background-color: inherit;
-
-	color: rgb(50, 22, 31);
+	color: rgb(200, 70, 48);
 }
 .menu_item:hover {
 	border-color: white;
