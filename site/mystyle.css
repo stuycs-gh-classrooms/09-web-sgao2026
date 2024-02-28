@@ -38,7 +38,10 @@ a {
 	background-color: rgb(42,77,64);
 }
 .menu_item:hover {
-	background-color: rgb(42,77,64, 70%);
+	border: 2px;
+	border-style: solid;
+	border-color: white;
+	background-color: rgb(179,232,182,40%);
 }
 
 .current_page {
@@ -46,9 +49,6 @@ a {
 	border-style: solid;
 	border-color: white;
 	background-color: inherit;
-}
-.current_page:hover {
-	background-color: rgb(179,232,182,40%);
 }
 
 .resource {
