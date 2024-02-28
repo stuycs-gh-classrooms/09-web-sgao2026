@@ -7,7 +7,9 @@ body {
 a {
 	color: black;
 }
-
+.white_text {
+	color: white;
+}
 
 
 
@@ -50,9 +52,6 @@ a {
 	background-color: rgb(179,232,182,40%);
 }
 
-.menu_link {
-	color: white;
-}
 .resource {
 	color: inherit;
 	background-color: rgb(55,166,118);
