@@ -28,11 +28,9 @@ li {
 .menu {
 	/* padding: 0px;
 	margin: 10px; */
-	text-align: right;
 }
 .menu_item {
 	display: inline;
-	text-align: right;
 
 	padding: 5px;
 	padding-left: 15px;
@@ -54,6 +52,9 @@ li {
 }
 
 .current_page {
+	border: inherit;
+	border-style: inherit;
+	border-color: black;
 	color: black;
 }
 
