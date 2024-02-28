@@ -7,6 +7,7 @@ a {
 }
 h1,
 h2,
+h3,
 p,
 ul,
 li {
@@ -101,4 +102,32 @@ li {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
+}
+
+
+#bar1 {
+	display: inline;
+	text-align: center;
+}
+.sub_1 {
+	margin: 10px;
+	
+	background-color: none;
+	
+	border: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(212, 210, 213);
+	
+	width: 30%;
+	text-align: center;
+}
+#l1_image {
+	float: left;
+	margin-right: 5px;
+	
+	height: 10%;
+}
+#li_heading {
+	display: inline;
 }
