@@ -40,6 +40,7 @@ li {
 	
 	color: rgb(200, 70, 48);
 	font-weight: bold;
+	font-size: 20px;
 }
 .menu_item:hover {
 	border-color: black;
