@@ -2,7 +2,7 @@ html {
 	padding: 20px;
 }
 body {
-	background-color: rgb(215, 205, 204);
+	background-color: rgb(212, 210, 213);
 }
 a {
 	color: black;
@@ -21,7 +21,7 @@ a {
 .menu_box {
 	margin: 10px;
 	padding: 10px;
-	background-color: rgb(30, 45, 36);
+	background-color: rgb(2, 60, 64);
 	border-radius: 10px;
 }
 .menu {
@@ -76,7 +76,7 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 	
-	background-color: rgb(129, 94, 91,70%);
+	background-color: rgb(130, 113, 145,70%);
 	border-radius: 10px;
 }
 
@@ -91,7 +91,7 @@ a {
 	margin-right: 10px;
 	padding: 10px;
 
-	background-color: rgb(42,77,64);
+	background-color: rgb(130, 113, 145);
 	border-radius: 10px;
 	height: 50px;
 }
