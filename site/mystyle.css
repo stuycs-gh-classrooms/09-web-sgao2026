@@ -35,7 +35,7 @@ a {
 	border-style: solid;
 	border-color: rgb(42,77,64);
 	
-	background-color: rgb(42,77,64);
+	background-color: inherit;
 
 	color: rgb(50, 22, 31);
 }
@@ -47,7 +47,6 @@ a {
 .current_page {
 	color: white;
 	border-color: white;
-	background-color: inherit;
 }
 
 .resource {
