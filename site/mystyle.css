@@ -40,6 +40,10 @@ a {
 	border-color: black;
 	color: black;
 }
+.menu_resource {
+	background-color: rgb(2, 60, 64);
+	color: white;
+}
 
 .resource {
 	padding: 5px;
