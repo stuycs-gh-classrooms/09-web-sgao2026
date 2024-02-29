@@ -43,6 +43,10 @@ a {
 .menu_resource {
 	background-color: rgb(2, 60, 64);
 	color: white;
+	border-color: rgb(2, 60, 64);
+}
+menu_resource:hover {
+	border-color: rgb(2, 60, 64);
 }
 
 .resource {
