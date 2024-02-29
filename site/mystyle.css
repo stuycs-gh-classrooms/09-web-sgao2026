@@ -100,7 +100,7 @@ a {
 
 	margin-right: 10px;
 	
-	background-color: white;
+	background-color: rgb(212, 210, 213, 10%);
 	
 	border: 5px;
 	border-style: solid;
@@ -111,10 +111,7 @@ a {
 }
 
 .dates_image {
-	width: 20%;
-	border: 1px;
-	border-style: solid;
-	border-color: black;
+	width: 25%;
 }
 .dates_text {
 	display: inline;
