@@ -44,8 +44,9 @@ a {
 	background-color: rgb(2, 60, 64);
 	color: white;
 	border-color: rgb(2, 60, 64);
+	font-weight: normal;
 }
-menu_resource:hover {
+.menu_resource:hover {
 	border-color: rgb(2, 60, 64);
 }
 
