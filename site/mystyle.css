@@ -42,14 +42,17 @@ a {
 }
 
 .resource {
-	color: inherit;
-	background-color: rgb(55,166,118);
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+	border: 1px;
+	border-style: solid;
+	border-color: rgb(2, 60, 64);
 }
-
+.resource:hover {
+	background-color: rgb(255, 255, 255, 50%);
+}
 
 
 
