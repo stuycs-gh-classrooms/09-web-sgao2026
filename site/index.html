@@ -6,23 +6,22 @@
         <link href="mystyle.css" rel="stylesheet">
     </head>
     <body>
-        <div class="menu_box">
+        <nav>
 	<ul class="menu">
-            <li class="current_page menu_item"><a href="http://homer.stuy.edu/~sgao60/site/index.html">Home</a></li>
+            <li class="menu_item current_page"><a href="http://homer.stuy.edu/~sgao60/site/index.html">Home</a></li>
             <li class="menu_item"><a href="http://homer.stuy.edu/~sgao60/site/kinetics.html">Unit 10: Kinetics</a></li>
             <li class="menu_item"><a href="http://homer.stuy.edu/~sgao60/site/equilibrium.html">Unit 11: Equilibrium</a></li>
         </ul>
-        </div>
+        </nav>
 
         <div class="section_name">
         <h1>Home</h1>
         <div class="section">
 	<p>This website is created for the annual Foundations of CS course with Dyrland-Weaver. I do not know what I am doing. Please help. Or provide emotional support.</p>
 	</div>
-    </body>
 	
 	<div id="bar1">
-	<div class="section sub_1">
+	<div class="section bar_item" id="quick_access">
 		<h2>Quick Access</h2>
 		<ul id="resource_bar">
 			<li class="resource_bar_item"><a href="https://classroom.google.com/c/NjU4NzEwNjA4OTA4"><img class="home_resource" src="images/gc-icon.png"></a></li>
@@ -31,11 +30,41 @@
 		</ul>
 	</div>
 	
-	<div class="section sub_1">
+	<div class="section bar_item" id="important_dates">
 		<h2>Important Dates</h2>
 		<div>
-			<img src="images/ap_test_date.png" id="l1_image"><h3 id="l1_heading">Monday, May 6, 2024</h3>
+			<img src="images/ap_test_date.png" class="dates_image" id="l1_image">
+			<span class="dates_text" id="l1_text"><h3>Monday, May 6, 2024</h3>
+			<p>AP Chemistry Exam: Early Administration</p></span>
+		</div>
+		<div>
+			<img src="images/11_test_date.png" class="dates_image" id="l2_image">
+			<span class="dates_text" id="l2_text"><h3>Tuesday, February 28, 2024</h3>
+			<p>Equilibrium Exam</p></span>
+		</div>
+		<div>
+			<img src="images/12_test_date.png" class="dates_image" id="l3_image">
+			<span class="dates_text" id="l3_text"><h3>Monday, March 4, 2024</h3>
+			<p>Acids and Bases Exam</p></span>
 		</div>
 	</div>
+	<div class="section bar_item" id="topic">
+		<h2>Topics</h2>
+		<span id="topic_list"><li>Unit 1: Foundations of Chemistry</li>
+		<li>Unit 2: Light and the Electron</li>
+		<li>Unit 3: Moles and Stoichiometry</li>
+		<li>Unit 4: Types of Reactions</li>
+		<li>Unit 5: Thermodynamics</li>
+		<li>Unit 6: Bonding</li>
+		<li>Unit 7: Gases</li>
+		<li>Unit 8: Solids and Liquids</li>
+		<li>Unit 9: Solutions Revisited</li>
+		<li>Unit 10: Kinetics</li>
+		<li>Unit 11: Equilibrium</li>
+		<li>Unit 12: Acids and Bases</li>
+		<li>Unit 13: Buffers and Titrations</li>
+		<li>Unit 14: Electric Chemistry</li></span>
 	</div>
+	</div>
+    </body>
 </html>
