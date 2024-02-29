@@ -100,9 +100,9 @@ a {
 
 	margin-right: 10px;
 	
-	background-color: rgb(212, 210, 213, 25%);
-	
-	border: 5px;
+	background-color: white;
+
+	border: 3px;
 	border-style: solid;
 	border-radius: 15px;
 	border-color: rgb(212, 210, 213);
@@ -110,27 +110,10 @@ a {
 	text-align: center;
 }
 
-.dates_image {
-	width: 25%;
-}
+
 .dates_text {
-	display: inline;
-}
-#l1_image,
-#l3_image {
-	float: left;
-	margin-right: 8px;
-}
-#l2_image {
-	float: right;
-	margin-left: 8px;
-}
-#l1_text,
-#l3_text {
 	text-align: left;
-}
-#l2_text {
-	text-align: right;
+	margin-bottom: 50px;
 }
 
 #topic {
