@@ -111,7 +111,7 @@ a {
 }
 
 .dates_image {
-	height: 10%;
+	width: 5%;
 }
 .dates_text {
 	display: inline;
@@ -133,7 +133,9 @@ a {
 	text-align: right;
 }
 
-
+#topic {
+	margin-right: 0px;
+}
 #topic_list {
 	text-align: left;
 }
