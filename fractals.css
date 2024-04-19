@@ -1,10 +1,11 @@
 img {
   display: block;
   width: 100px;
+  text-align: center;
 }
 
 .section {
-  background-color: steelblue;
+  background-color: linen;
   margin-bottom: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
