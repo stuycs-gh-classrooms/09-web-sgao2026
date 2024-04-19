@@ -3,6 +3,7 @@ img {
   width: 33%;
   margin-left: auto;
   margin-right: auto;
+  float: right;
 }
 
 .section {
