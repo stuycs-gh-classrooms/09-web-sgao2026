@@ -21,3 +21,7 @@ h2,
 p {
   color: rgb(50, 22, 31);
 }
+
+pre {
+  display: inline;
+}
