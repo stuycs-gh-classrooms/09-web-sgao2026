@@ -9,17 +9,18 @@
         <div class="section">
         <h1>Koch Curve</h1>
 	<p>The Koch Curve consists of four Koch curves of the previous depth arranged with every interation of the previous depth forming one side of the Koch curve and a Koch curve depth of 1 being a straight, horizontal line</p>
-	<pre><code>
-		koch(t, 4, 20)
-	</code></pre>
-	<img src="http://homer.stuy.edu/~sgao60/koch_original.png">	
-	
+	<div>
+		<pre><code>
+			koch(t, 4, 20)
+		</code></pre>
+		<img src="http://homer.stuy.edu/~sgao60/koch_original.png">	
+	</div>
 	<h2>Koch Curve Modification</h2>
 	<p>The Koch curve with each curve as a side of a trangle and the angles inverted, known as a Koch snowflake, and at the end of every depth 1 curve, the turtle also draws a modification of the tree fractal at a random angle</p>
-	<pre><code>
-		koch_spicy(child, 4, 20)
-	</code></pre>
-	<img src="http://homer.stuy.edu/~sgao60/koch_spicy.png">
+	<div>
+		<pre><code>
+			koch_spicy(child, 4, 20)
+		</code></pre>
 	<pre><code>
 		def koch_mod(t, depth, length):
 			if depth > 1:
@@ -47,22 +48,26 @@
 			koch_mod(t, depth, length)
 			t.rt(180)
 	</code></pre>
+		<img src="http://homer.stuy.edu/~sgao60/koch_spicy.png">
+	</div>
 	</div>
 	
 	<div class="section">
         <h1>Sierpinski Triangle</h1>
 	<p>The Sierpinski Triangle consists of 3 Sierpinski triangles of the previous depth--a depth 1 Sierpinski triangle being an equilateral triangle--arranged to form a larger triangle.</p>
-	<pre><code>
-		sierpinski(t, 5, 200)
-	</code></pre>
+	<div>
+		<pre><code>
+			sierpinski(t, 5, 200)
+		</code></pre>
 	<img src="http://homer.stuy.edu/~sgao60/sierpinski_original.png">
+	</div>
 	
 	<h2>Sierpinski Triangle Modification</h2>
 	<p>The width of the line increases as depth decreases and the color of the line depends on which side of the triangle the turtle is drawing.</p>
-	<pre><code>
-		sierpinski_spicy(t, 5, 200)
-	</code></pre>
-	<img src="http://homer.stuy.edu/~sgao60/sierpinski_spicy.png">
+	<div>
+		<pre><code>
+			sierpinski_spicy(t, 5, 200)
+		</code></pre>
 	<pre><code>
 		def sierpinski_spicy(t, depth, length): 
 		    t.width(1)
@@ -93,22 +98,25 @@
 		        t.fd(length)
 		        t.rt(180)
 	</code></pre>
+	<img src="http://homer.stuy.edu/~sgao60/sierpinski_spicy.png">
+	</div>
 	</div>
 
 	<div class="section">
         <h1>Tree</h1>
 	<p>The tree consists of three Trees of the previous depth--with a depth 1 tree being a straight line--with one tree vertical and the other two at the angle given to the function.</p>
-	<pre><code>
-		tree(child, 4, 50, 20)
-	</code></pre>
+	<div>
+		<pre><code>
+			tree(child, 4, 50, 20)
+		</code></pre>
 	<img src="http://homer.stuy.edu/~sgao60/tree_original.png">
+	</div>
 	
 	<h2>Tree Modification</h2>
 	<p>The Tree except there are flowers of a random color and size at the ends of every depth 1 tree.</p>
 	<pre><code>
 		tree_spicy(child, 4, 50, 20)
 	</code></pre>
-	<img src="http://homer.stuy.edu/~sgao60/tree_spicy.png">
 	<pre><code>
 		def tree_spicy(t, depth, length, angle): 
 		    if depth > 1:
@@ -138,6 +146,8 @@
 		        t.width(1)
 		        t.color('black')
 	</code></pre>
+	<img src="http://homer.stuy.edu/~sgao60/tree_spicy.png">
+	</div>
 	</div>
 
     </body>
