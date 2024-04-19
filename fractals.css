@@ -7,11 +7,17 @@ img {
 
 .section {
   background-color: linen;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+h1,
+h2,
+p {
+  color: rgb(200, 70, 48)
 }
