@@ -6,6 +6,10 @@ img {
   float: right;
 }
 
+div {
+  block-size: fit-content;
+}
+
 .section {
   background-color: linen;
   margin-bottom: 50px;
