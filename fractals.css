@@ -1,0 +1,14 @@
+img {
+  display: block;
+  width: 100px;
+}
+
+.section {
+  background-color: steelblue;
+  bottom-margin: 100px;
+  top-padding: 10px;
+  bottom-padding: 10px;
+  left-padding: 30px;
+  right-padding: 30px;
+  left-margin: 50px;
+  right-margin: 50px;
