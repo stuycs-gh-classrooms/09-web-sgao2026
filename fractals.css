@@ -6,10 +6,6 @@ img {
   float: right;
 }
 
-.code {
-  
-}
-
 .section {
   background-color: linen;
   margin-bottom: 50px;
@@ -25,8 +21,4 @@ h1,
 h2,
 p {
   color: rgb(50, 22, 31);
-}
-
-pre {
-  display: inline;
 }
