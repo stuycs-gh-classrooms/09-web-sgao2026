@@ -7,7 +7,7 @@ img {
 }
 
 div {
-  length: fit-content;
+  height: fit-content;
 }
 
 .section {
