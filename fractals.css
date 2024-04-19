@@ -5,10 +5,11 @@ img {
 
 .section {
   background-color: steelblue;
-  bottom-margin: 100px;
-  top-padding: 10px;
-  bottom-padding: 10px;
-  left-padding: 30px;
-  right-padding: 30px;
-  left-margin: 50px;
-  right-margin: 50px;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
