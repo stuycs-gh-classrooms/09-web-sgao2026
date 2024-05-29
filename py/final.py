@@ -11,6 +11,7 @@ def generate_page(body):
 	<head>
 	<meta charset='utf-8'>
 	<title>Home</title>
+	<link href="../final/mystle.css" rel="stylesheet">
 	</head>
 	<body>\n"""
 	html_footer = """</body>
