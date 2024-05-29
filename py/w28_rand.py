@@ -9,4 +9,4 @@ print ("""<!DOCTYPE html>
 			<title>work 28</title>
 		</head>
 		<body> 
-			<h1> 'generated: '""", random(), """\n</h1></body></html>""")
+			<h1> generated: """, random(), """\n</h1></body></html>""")
