@@ -31,11 +31,8 @@ def list_ (g):
 	return series + '</ul>\n'
 
 data = cgi.FieldStorage()
-name = ''
-if ('name' in data):
-	name = data['name'].value
-bgcolor = ''
-if ('bgcolor' in data):
-	bgcolor = data['bgcolor'].value
+request = ''
+if ('request' in data):
+	request = data['request'].value
 
-generate_page(p(name  + ' ' +  bgcolor))
+generate_page(p(request))
