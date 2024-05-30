@@ -18,4 +18,14 @@ def generate_page(body):
 	</html>"""
 
 	print(html_header, body, html_footer)
-generate_page('<p>hiihiihihihihih</p>')
+def p(s):
+	return '<p>' + s + '</p>\n'
+def h1(s):
+	return '<h1>' + s + '</p>\n'
+def list_ (g):
+	n = 0
+	series = '<ul>\n'
+	while n < len(g):
+		series += '<li>' + g[n] + '</li>\n'
+		n += 1
+	return series + '</ul>\n'
