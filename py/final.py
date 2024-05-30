@@ -29,3 +29,13 @@ def list_ (g):
 		series += '<li>' + g[n] + '</li>\n'
 		n += 1
 	return series + '</ul>\n'
+
+data = cgi.FieldStorage()
+name = ''
+if ('name' in data):
+	name = data['name'].value
+bgcolor = ''
+if ('bgcolor' in data):
+	bgcolor = data['bgcolor'].value
+
+generate_page(p(name  + ' ' +  bgcolor))
