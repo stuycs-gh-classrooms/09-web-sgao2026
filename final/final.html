@@ -3,18 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Home</title>
-  </head>
-
-  <body>
-
-    <form action="../py/final.py" method="GET">
-      What are you looking for? 
-	<br><br>
-	<input type="text" name="request">
-      <br><br>
-      <input type="submit" name="search">
-    </form>
+	</head>
 	
-  </body>
-
+	<body>
+		<nav>
+			<ul>
+				<li><a href='final.html'>Home</a></li>
+				<li><a href='../py/year.py'>By Year</a></li>
+				<li><a href='../py/author.py'>By Author</a></li>
+			</ul>
+		</nav>
+		<form action="../py/final.py" method="GET">
+			<p>What are you looking for?</p>
+			<br><br>
+			<input type="text" name="request">
+			<br><br>
+			<input type="submit" name="search">
+		</form>
+	
+	</body>
 </html>
