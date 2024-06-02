@@ -10,7 +10,7 @@ f = open('data.txt', encoding='utf-8')
 file = f.read()
 f.close()
 
-year_popular = {'year': [{'title': {'author': '', 'series': '', 'words': {}, 'chars': {}}}]}
+year_popular = {'year': {'title': {'author': '', 'series': '', 'rating': ''}}}
 years = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
 
 # cleaning file
@@ -23,17 +23,16 @@ while n < len(file):
     
 # creating dictionary
 for top3 in file:
-    entry = []
+    entry = {}
     n = 0
     while n < len(top3):
         info = top3[n].split('; ')
-        d = {info[0]: {'author': info[1], 'series': info[2], 'words': {}, 'chars': {}}}
-        entry.append(d)
+        entry[info[0]] = {'author': info[1], 'series': info[2], 'rating': info[3]}
         n += 1
         
     year = '20' + years[file.index(top3)]
     year_popular[year] = entry
-# pprint(year_popular)
+pprint(year_popular)
 
 def generate_page(title, body):
 	html_header = """<!DOCTYPE html>
