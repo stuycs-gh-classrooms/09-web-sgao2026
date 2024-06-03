@@ -32,7 +32,6 @@ for top3 in file:
         
     year = '20' + years[file.index(top3)]
     year_popular[year] = entry
-pprint(year_popular)
 
 def generate_page(title, body):
 	html = f"""<!DOCTYPE html>
