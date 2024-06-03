@@ -6,7 +6,7 @@ cgitb.enable()
 import cgi
 from pprint import pprint
 
-f = open('data.txt', encoding='utf-8')
+f = open('../final/data.txt', encoding='utf-8')
 file = f.read()
 f.close()
 
