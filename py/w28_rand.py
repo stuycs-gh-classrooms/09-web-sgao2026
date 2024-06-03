@@ -10,3 +10,7 @@ print ("""<!DOCTYPE html>
 		</head>
 		<body> 
 			<h1> generated: """, random(), """\n</h1></body></html>""")
+
+def test(s):
+    return f'hihihihhihihihi{s}hhihihi'
+print(test('no'))

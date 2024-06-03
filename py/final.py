@@ -35,22 +35,23 @@ for top3 in file:
 pprint(year_popular)
 
 def generate_page(title, body):
-	html_header = """<!DOCTYPE html>
+	html = f"""<!DOCTYPE html>
 <html lang="en">
 	<head>
 	<meta charset='utf-8'>
-	<title>""" + title + """</title>
+	<title>{title}</title>
 	<link href="../final/mystyle.css" rel="stylesheet">
 	</head>
-	<body>\n"""
-	html_footer = """	</body>
+	<body>
+		{body}
+	</body>
 </html>"""
 
-	print(html_header, body, html_footer)
+	print(html)
 def p(s):
-	return '<p>' + s + '</p>\n'
+	return f'<p>{s}</p>\n'
 def h1(s):
-	return '<h1>' + s + '</h1>\n'
+	return f'<h1>{s}</h1>\n'
 def list_ (g):
 	n = 0
 	series = '<ul>\n'
@@ -59,9 +60,10 @@ def list_ (g):
 		n += 1
 	return series + '</ul>\n'
 def link(s, name):
-    return '<a href=' + s + '>' + name + '</a>'
+    return '<a href={s}>{name}</a>'
 
 data = cgi.FieldStorage()
 request = ''
 if ('request' in data):
 	request = data['request'].value
+generate_page(request, h1(request))
