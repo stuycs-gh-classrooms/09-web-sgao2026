@@ -45,8 +45,8 @@ def generate_page(title, body):
 		<nav>
 			<ul>
 				<li><a href="../final/final.html">Home</a></li>
-				<li><a href="final.py?request=By+Author&search=Submit+Query>By Author</a></li>
-				<li><a href="final.py?request=By+Year&search=Submit+Query>By Year</a></li>
+				<li><a href="final.py?request=By+Author&search=Submit+Query">By Author</a></li>
+				<li><a href="final.py?request=By+Year&search=Submit+Query">By Year</a></li>
 			</ul>
 		</nav>
 		{body}
