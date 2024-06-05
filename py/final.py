@@ -5,7 +5,11 @@ import cgitb
 cgitb.enable()
 import cgi
 from pprint import pprint
+from matplotlib import pyplot
+import io
+import base64
 
+# opening data
 f = open('../final/data.txt', encoding='utf-8')
 file = f.read()
 f.close()
@@ -32,6 +36,7 @@ for top3 in file:
         
     year = '20' + years[file.index(top3)]
     year_popular[year] = entry
+year_popular = year_popular.pop('year')
 
 def generate_page(title, body):
 	html = f"""<!DOCTYPE html>
@@ -67,9 +72,51 @@ def list_ (g):
 	return series + '</ul>\n'
 def link(s, name):
     return '<a href={s}>{name}</a>'
+def make_image_element():
+	buffer = io.BytesIO()
+	pyplot.savefig(buffer, format="png")
+	buffer.seek(0)
+	image_code = base64.b64encode(buffer.read()).decode('utf-8')
+	src = f"data:image/png;base64,{image_code}"
+	return f"<img src={src}>"
+
 
 data = cgi.FieldStorage()
-request = ''
-if ('request' in data):
-	request = data['request'].value
-generate_page(request, h1(request))
+if (data['request'].value == 'By Author'):
+	# generating count of books per author
+	counts = {}
+	for year in year_popular:
+		for book in year:
+			if book['author'] in counts:
+				counts[book['author']] += 1
+			else:
+				counts[book['author']] = 1
+	pyplot.ylabel('frequency author is in top three')
+	pyplot.xlabel('author name')
+	if ('graph_type' in form_input):
+		if form_input['graph_type'] == 'pie':
+			pyplot.pie(list(counts.keys()), list(counts.values()))
+		else:
+			pyplot.bar(list(counts.keys()), list(counts.values()))
+
+page = f"""
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset='utf-8'>
+        <title>{title}</title>
+        <link href="../final/mystyle.css" rel="stylesheet">
+        </head>
+        <body>
+		<nav>
+                        <li><a href="../final/final.html">Home</a></li>
+                        <li><a href="final.py?request=By+Author&search=Submit+Query">By Author</a></li>
+               	        <li><a href="final.py?request=By+Year&search=Submit+Query">By Year</a></li>
+                </nav>
+
+		<h1>{title}</h1>
+		<p>This is the top three books according to GoodReads {title.lower()}.</p>
+		{content}
+        </body>
+</html>"""
+
