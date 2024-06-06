@@ -93,8 +93,8 @@ if (data['request'].value == 'By Author'):
 				counts[year_popular[year][book]['author']] = 1
 	pyplot.ylabel('frequency author is in top three')
 	pyplot.xlabel('author name')
-	if ('graph_type' in form_input):
-		if form_input['graph_type'] == 'pie':
+	if ('graph_type' in data):
+		if data['graph_type'] == 'pie':
 			pyplot.pie(list(counts.keys()), list(counts.values()))
 		else:
 			pyplot.bar(list(counts.keys()), list(counts.values()))
