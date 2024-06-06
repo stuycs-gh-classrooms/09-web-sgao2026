@@ -122,3 +122,4 @@ page = f"""
 		{content}
         </body>
 </html>"""
+print(page)
