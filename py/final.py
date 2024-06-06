@@ -86,11 +86,11 @@ if (data['request'].value == 'By Author'):
 	# generating count of books per author
 	counts = {}
 	for year in year_popular:
-		for book in year:
-			if year[book]['author'] in counts:
-				counts[year[book]['author']] += 1
+		for book in year_popular[year]:
+			if year_popular[year][book]['author'] in counts:
+				counts[year_popular[year][book]['author']] += 1
 			else:
-				counts[year[book]['author']] = 1
+				counts[year_popular[year][book]['author']] = 1
 	pyplot.ylabel('frequency author is in top three')
 	pyplot.xlabel('author name')
 	if ('graph_type' in form_input):
