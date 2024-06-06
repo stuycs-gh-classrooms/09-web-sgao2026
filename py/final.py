@@ -99,7 +99,7 @@ if (data['request'].value == 'By Author'):
 		else:
 			pyplot.bar(list(counts.keys()), list(counts.values()))
 	if ('request' in data):
-		title = data['request']
+		title = data['request'].value
 
 page = f"""
 <!DOCTYPE html>
