@@ -97,7 +97,7 @@ if (data['request'].value == 'By Author'):
 		if data['graph_type'] == 'pie':
 			pyplot.pie(list(counts.keys()), list(counts.values()))
 		else:
-			pyplot.bar(list(counts.keys()), list(counts.values()))
+			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()))
 	content = make_image_element()
 	if ('request' in data):
 		title = data['request'].value
