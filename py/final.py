@@ -78,7 +78,7 @@ def make_image_element():
 	buffer.seek(0)
 	image_code = base64.b64encode(buffer.read()).decode('utf-8')
 	src = f"data:image/png;base64,{image_code}"
-	return f"<img width='500'src={src}>"
+	return f"<img width='75%'src={src}>"
 
 
 data = cgi.FieldStorage()
