@@ -78,7 +78,7 @@ def make_image_element():
 	buffer.seek(0)
 	image_code = base64.b64encode(buffer.read()).decode('utf-8')
 	src = f"data:image/png;base64,{image_code}"
-	return f"<img width='75%'src={src}>"
+	return f"<img width='50%'src={src}>"
 
 
 data = cgi.FieldStorage()
@@ -98,9 +98,9 @@ if (data['request'].value == 'By Author'):
 			pyplot.pie(list(counts.values()))
 		else:
 			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5, linewidth=3)
-	content = make_image_element()
 	if ('request' in data):
 		title = data['request'].value
+content = make_image_element()
 
 page = f"""
 <!DOCTYPE html>
