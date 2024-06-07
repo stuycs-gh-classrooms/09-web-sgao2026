@@ -95,7 +95,7 @@ if (data['request'].value == 'By Author'):
 	pyplot.xlabel('author name')
 	if ('graph_type' in data):
 		if data['graph_type'] == 'pie':
-			pyplot.pie(list(counts.keys()), list(counts.values()))
+			pyplot.pie(list(counts.values()))
 		else:
 			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5, linewidth=3)
 	content = make_image_element()
