@@ -82,8 +82,6 @@ def make_image_element():
 
 
 data = cgi.FieldStorage()
-if 'graph_type' not in data:
-	data['graph_type'].value = 'bar'
 if 'request' in data:
 	title = data['request'].value 
 if (data['request'].value == 'By Author'):
@@ -97,10 +95,13 @@ if (data['request'].value == 'By Author'):
 				counts[year_popular[year][book]['author']] = 1
 	pyplot.ylabel('frequency author is in top three')
 	pyplot.xlabel('author name')
-	if data['graph_type'].value == 'pie':
-		pyplot.pie(list(counts.values()))
-	else:
-		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5, linewidth=3)
+	if 'graph_type' in data:
+		if data['graph_type'].value == 'pie':
+			pyplot.pie(list(counts.values()))
+		else:
+			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5)
+	else: 
+		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys), width=0.5)
 content = f"""
 	<form action='final.py' method='GET'>
 		<p>Display Data As: </p>
