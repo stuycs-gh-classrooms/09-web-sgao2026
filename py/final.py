@@ -82,6 +82,10 @@ def make_image_element():
 
 
 data = cgi.FieldStorage()
+if 'graph_type' not in data:
+	data['graph_type'].value = 'bar'
+if 'request' in data:
+	title = data['request'].value 
 if (data['request'].value == 'By Author'):
 	# generating count of books per author
 	counts = {}
@@ -93,14 +97,26 @@ if (data['request'].value == 'By Author'):
 				counts[year_popular[year][book]['author']] = 1
 	pyplot.ylabel('frequency author is in top three')
 	pyplot.xlabel('author name')
-	if ('graph_type' in data):
-		if data['graph_type'] == 'pie':
-			pyplot.pie(list(counts.values()))
-		else:
-			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5, linewidth=3)
-	if ('request' in data):
-		title = data['request'].value
-content = make_image_element()
+	if data['graph_type'].value == 'pie':
+		pyplot.pie(list(counts.values()))
+	else:
+		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5, linewidth=3)
+content = f"""
+	<form action='final.py' method='GET'>
+		<p>Display Data As: </p>
+		<select name='graph_type'>
+			<option value='bar graph'>Bar Graph</option>
+			<option value='pie graph'>Pie Graph</option>
+		</select>
+		<br>
+		<input type='submit' value='search'>
+	</form>
+
+	<h1>{title}</h1>
+	<p>These are the top three books from 2000-2020 according to GoodReads displayed in a {data['graph_type']} by {title.lower()}</p>
+	{make_image_element}
+"""
+content += make_image_element()
 
 page = f"""
 <!DOCTYPE html>
@@ -116,9 +132,6 @@ page = f"""
                         <li><a href="final.py?request=By+Author&search=Submit+Query">By Author</a></li>
                	        <li><a href="final.py?request=By+Year&search=Submit+Query">By Year</a></li>
                 </nav>
-
-		<h1>{title}</h1>
-		<p>This is the top three books according to GoodReads {title.lower()}.</p>
 		{content}
         </body>
 </html>"""
