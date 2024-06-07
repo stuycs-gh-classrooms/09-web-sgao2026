@@ -101,7 +101,7 @@ if (data['request'].value == 'By Author'):
 		else:
 			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5)
 	else: 
-		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys), width=0.5)
+		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=0.5)
 content = f"""
 	<form action='final.py' method='GET'>
 		<p>Display Data As: </p>
