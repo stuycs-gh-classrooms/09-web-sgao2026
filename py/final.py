@@ -112,13 +112,13 @@ content = f"""
 			<option value='bar graph'>Bar Graph</option>
 			<option value='pie graph'>Pie Graph</option>
 		</select>
-		<br>
+		<br><br>
 		<input type='submit' value='search'>
 	</form>
 
 	<h1>{title}</h1>
 	<p>These are the top three books from 2000-2020 according to GoodReads displayed in a {graph_type} {title.lower()}</p>
-	{make_image_element}
+	{make_image_element()}
 """
 
 page = f"""
