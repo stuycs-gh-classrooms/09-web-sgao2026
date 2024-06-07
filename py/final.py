@@ -97,10 +97,13 @@ if (data['request'].value == 'By Author'):
 	pyplot.xlabel('author name')
 	if 'graph_type' in data:
 		if data['graph_type'].value == 'pie':
+			graph_type = 'pie'
 			pyplot.pie(list(counts.values()))
 		else:
+			graph_type = 'bar'
 			pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=5)
-	else: 
+	else:
+		graph_type = 'bar'
 		pyplot.bar(list(counts.keys()), list(counts.values()), label=list(counts.keys()), width=0.5)
 content = f"""
 	<form action='final.py' method='GET'>
@@ -114,10 +117,9 @@ content = f"""
 	</form>
 
 	<h1>{title}</h1>
-	<p>These are the top three books from 2000-2020 according to GoodReads displayed in a {data['graph_type']} by {title.lower()}</p>
+	<p>These are the top three books from 2000-2020 according to GoodReads displayed in a {graph_type} by {title.lower()}</p>
 	{make_image_element}
 """
-content += make_image_element()
 
 page = f"""
 <!DOCTYPE html>
